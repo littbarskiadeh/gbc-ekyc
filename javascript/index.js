@@ -6,7 +6,7 @@
 
 'use strict';
 
-const User = require('./lib/ekyc');
+const User = require('./lib/user');
 
 module.exports.User = User;
 module.exports.contracts = [User];

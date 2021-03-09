@@ -54,7 +54,7 @@ class User extends Contract {
 
         for (let i = 0; i < users.length; i++) {
             users[i].docType = 'user';
-            await ctx.stub.putState('user' + i, Buffer.from(JSON.stringify(users[i])));
+            await ctx.stub.putState('USER' + i, Buffer.from(JSON.stringify(users[i])));
             console.info('Added <--> ', users[i]);
         }
         console.info('============= END : Initialize Ledger ===========');
